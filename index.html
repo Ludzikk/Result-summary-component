@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results summary component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/css/style.min.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="results">
+        <div class="results__top">
+          <p class="results__toptext">your result</p>
+          <div class="results__circle">
+            <div class="circle__top">
+              <p class="circle__main-value" id="value">76</p>
+            </div>
+            <div class="circle__bottom">
+              <p class="circle__secondary-value">of 100</p>
+            </div>
+          </div>
+          <p class="results__grade">Great</p>
+          <p class="results__text">
+            You scored higher than <span id="percent">62.5%</span> of the pepole who have taken these tests.
+          </p>
+        </div>
+        <div class="results__bottom">
+          <p class="results__summary">Summary</p>
+          <ul class="results__list">
+            <li class="results__item results__item--red">
+              <div class="item__left">
+                <img
+                  src="./dist/img/icon-reaction.svg"
+                  alt="Icon"
+                  class="item__icon"
+                />
+                <p class="item__text item__text--red">Reaction</p>
+              </div>
+              <p class="item__value">
+                <span id="reaction">80</span> <span class="item__value item__value--grey">/ 100</span>
+              </p>
+            </li>
+            <li class="results__item results__item--orange">
+              <div class="item__left">
+                <img
+                  src="./dist/img/icon-memory.svg"
+                  alt="Icon"
+                  class="item__icon"
+                />
+                <p class="item__text item__text--orange">Memory</p>
+              </div>
+
+              <p class="item__value">
+                <span id="memory">92</span> <span class="item__value item__value--grey">/ 100</span>
+              </p>
+            </li>
+            <li class="results__item results__item--green">
+              <div class="item__left">
+                <img
+                  src="./dist/img/icon-verbal.svg"
+                  alt="Icon"
+                  class="item__icon"
+                />
+                <p class="item__text item__text--green">Verbal</p>
+              </div>
+
+              <p class="item__value">
+                <span id="verbal">61</span> <span class="item__value item__value--grey">/ 100</span>
+              </p>
+            </li>
+            <li class="results__item results__item--blue">
+              <div class="item__left">
+                <img
+                  src="./dist/img/icon-visual.svg"
+                  alt="Icon"
+                  class="item__icon"
+                />
+                <p class="item__text item__text--blue">Visual</p>
+              </div>
+
+              <p class="item__value">
+                <span id="visual">72</span> <span class="item__value item__value--grey">/ 100</span>
+              </p>
+            </li>
+          </ul>
+          <button class="results__btn">Continue</button>
+        </div>
+      </section>
+    </main>
+    <script src="./dist/js/script.min.js"></script>
+  </body>
+</html>
